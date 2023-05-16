@@ -3,8 +3,8 @@ import './botao.css'
 const Botao = (props) => {
     return (
         <div>
-            <button>
-                {props.texto}
+            <button className='botao'>
+                {props.children}
             </button>
         </div>
     )
