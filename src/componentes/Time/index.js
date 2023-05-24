@@ -1,3 +1,4 @@
+import Colaborador from '../Colaborador'
 import './time.css'
 
 const Time = (props) => {
@@ -9,8 +10,16 @@ const Time = (props) => {
     // o mesmo vale pra borda
 
     return(
-        <section className='time' style={backgrounds}>
+        (props.colaboradores.length > 0) && <section className='time' style={backgrounds}>
             <h3 style={border}>{props.nome}</h3>
+            <div className='colaboradores'>
+                {props.colaboradores.map( colaborador =>
+                <Colaborador
+                nome={colaborador.nome}
+                cargo={colaborador.cargo}
+                imagem={colaborador.imagem}
+                />)}
+            </div>
         </section>
     )
 }
