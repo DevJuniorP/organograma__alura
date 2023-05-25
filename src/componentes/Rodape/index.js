@@ -8,13 +8,13 @@ const Rodape = () => {
                     <ul>
                         <li>
                             <a href="facebook.com" target='_blank'>
-                                <img src="./imagens/instagram.png" alt=""/>
+                                <img src="/imagens/instagram.png" alt=""/>
                             </a>
                         </li>
                     </ul>
                 </section>
                 <section>
-                    <img src="./imagens/logo.png" alt="" />
+                    <img src="/imagens/logo.png" alt="" />
                 </section>
                 <p>
                     Desenvolvido por Alura
